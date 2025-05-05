@@ -1,0 +1,2 @@
+web: gunicorn socialmedia.wsgi:application
+worker: celery -A socialmedia worker --loglevel=info
